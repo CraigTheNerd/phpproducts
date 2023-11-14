@@ -8,9 +8,9 @@ function getProductsInCategory(string $category): array {
     echo gettype($inventory[$category]);
 
     echo '<ul>';
-    foreach ($inventory[$category] as $i)
+    foreach ($inventory[$category] as $productInCategory)
     {
-        echo "<li>{$i}</li>";
+        echo "<li>{$productInCategory}</li>";
     }
     echo '</ul>';
 
