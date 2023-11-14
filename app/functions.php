@@ -24,10 +24,10 @@ function doesProductExistInCategory(string $product, string $category): bool {
     global $inventory;
     if (in_array($product, $inventory[$category]))
     {
-        echo 'yes';
+        echo 'true';
         return true;
     } else {
-        echo 'no';
+        echo 'false';
         return false;
     }
 
