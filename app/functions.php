@@ -15,7 +15,7 @@ function getProductsInCategory(string $category): array {
     echo '</ul>';
 
     return $inventory[$category];
-//    return [];
+
 }
 
 function doesProductExistInCategory(string $product, string $category): bool {
