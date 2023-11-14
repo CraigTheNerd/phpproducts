@@ -5,12 +5,17 @@ function getProductsInCategory(string $category): array {
 
     global $inventory;
 
-    echo '<pre>';
-    print_r($inventory[$category]);
-    echo '</pre>';
+    echo gettype($inventory[$category]);
 
+    echo '<ul>';
+    foreach ($inventory[$category] as $i)
+    {
+        echo "<li>{$i}</li>";
+    }
+    echo '</ul>';
 
-    return [];
+    return $inventory[$category];
+//    return [];
 }
 
 function doesProductExistInCategory(string $product, string $category): bool {
