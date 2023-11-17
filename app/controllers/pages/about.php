@@ -1,8 +1,8 @@
 <?php
 
 $data = [
-    'pageTitle' => 'About Us',
-    'heading' => 'About Us'
+    'pageTitle' => 'about',
+    'heading' => 'about'
 ];
 
-view('pages/about', $data);
+view('pages/index', $data);

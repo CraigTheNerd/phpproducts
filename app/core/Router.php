@@ -17,13 +17,13 @@ class Router
      */
     public function add(string $method, string $uri, string $controller) : Router
     {
-        $this->routes[] = compact('method', 'uri', 'controller');
+//        $this->routes[] = compact('method', 'uri', 'controller');
 
-//        $this->routes[] = [
-//            'uri' => $uri,
-//            'controller' => $controller,
-//            'method' => $method,
-//        ];
+        $this->routes[] = [
+            'uri' => $uri,
+            'controller' => $controller,
+            'method' => $method,
+        ];
 
         return $this;
     }
@@ -82,6 +82,9 @@ class Router
     {
         foreach ($this->routes as $route) {
             if ($route['uri'] === $uri && $route['method'] === strtoupper($method)) {
+
+//                dd(gettype(app_path($route['controller'])));
+
                 return require app_path($route['controller']);
             }
         }
