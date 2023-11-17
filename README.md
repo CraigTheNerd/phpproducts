@@ -2,13 +2,14 @@
 
 PHP Products is a code assessment I was asked to complete.
 
-This is the initial solution to the two problems I was tasked to complete.
+This MVC Core branch implements a MVC approach to the project to offer an extensible approach to the code.
 
 Application Demo - https://phpproducts.dicitil.co.za/
 
 ##  The PHP Logic
 
-This is an initial take on the code. Further changes are to come...
+I'm happy with the MVC structure.
+Next I'll implement the products logic.
 
 ## The Front End
 
@@ -19,11 +20,11 @@ I am currently building the front end and I will push the code and update the de
 
 ##  Application Structure
 
-The structure of the application will be changed as I refactor the code.
+The structure of the application now follows the MVC design pattern
 
 ##  Refactors
 
 Code refactors to look at
 
-- Extensibility
-- Application Structure & Layout
+- Product Logic
+- Front End
