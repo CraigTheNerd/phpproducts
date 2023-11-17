@@ -3,10 +3,15 @@
 node_modules/
 npm-debug.log
 yarn-error.log
+gulpfile.js
+package.json
+package.json.lock
+sourcemaps
 
 #   environment variables
 .env
 .env.production
+app/core/Config.php
 
 #   macOS-specific files
 .DS_Store
