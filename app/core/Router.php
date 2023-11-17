@@ -76,15 +76,12 @@ class Router
     /**
      * @param string $uri
      * @param string $method
-     * @return Router
+     * @return string
      */
-    public function route(string $uri, string $method) : Router
+    public function route(string $uri, string $method) : string
     {
         foreach ($this->routes as $route) {
             if ($route['uri'] === $uri && $route['method'] === strtoupper($method)) {
-
-//                dd(gettype(app_path($route['controller'])));
-
                 return require app_path($route['controller']);
             }
         }
