@@ -1,0 +1,223 @@
+//
+//  Import Styles
+//  ====================
+@import 'breakpoints'
+@import 'colors'
+@import 'fonts'
+
+@media all and (min-width: $mobile)
+    section#shop
+        background: white
+        margin: 0 auto
+        padding: 0
+        #category-wrapper
+            width: 100%
+            padding: 140px 10% 0 10%
+            display: flex
+            align-items: flex-start
+            justify-content: flex-start
+            flex-direction: column
+            #product-category
+                width: 100%
+                margin: 0 auto
+                padding: 0
+                #product-category-grid
+                    padding: 0
+                    width: 100%
+                    #product-category-grid-products
+                        background-color: transparent
+                        display: flex
+                        align-items: center
+                        justify-content: center
+                        gap: 2rem
+                        margin: 0 auto
+                        padding: 0
+                        flex-direction: column
+                        #product-card
+                            a
+                                text-decoration: none
+                                color: $text
+                                #product-card-image
+                                    width: 100%
+                                    height: auto
+                                    img
+                                        width: 100%
+                                        height: auto
+                                        max-width: 600px
+                                #product-card-title
+                                    margin-top: 15px
+                                    p.product-card-title
+                                        font-size: 1rem
+                                        font-weight: 400
+                                        letter-spacing: 2px
+                                #product-card-price
+                                    padding: 10px 0 20px 0
+                                    p.product-card-price
+                                        font-size: 1rem
+                                        font-family: Poppins, sans-serif
+                                        font-weight: 700
+                                        color: black
+                                        letter-spacing: 1px
+            #sidebar
+                width: 100%
+                margin: 0 auto
+                padding: 40px 0
+                #product-categories
+                    .title
+                        h3
+                            color: black
+                            padding-bottom: 20px
+                        .title-underline
+                            width: 100%
+                            border-top: 1px solid #eee
+                    ul.category-list
+                        li.product-category
+                            list-style-type: none
+                            padding: 0 0 10px 0
+                            form
+                                button
+                                    font-size: 0.9rem
+                                    background: none
+                                    border: none
+                                    transition: all ease 100ms
+                                    color: lightslategray
+                                    font-weight: 600
+                                    letter-spacing: 3px
+                                    &:hover
+                                        cursor: pointer
+                                        color: $primary
+                                        transition: all ease 100ms
+
+@media all and (min-width: $mobileLarge)
+    section#shop
+        #category-wrapper
+            #product-category
+                #product-category-grid
+                    #product-category-grid-products
+                        background-color: transparent
+                        display: grid
+                        grid-template-columns: 1fr 1fr
+                        gap: 1rem
+                        width: 100%
+                        #product-card
+                            a
+                                text-decoration: none
+                                color: $text
+                                #product-card-image
+                                    width: 100%
+                                    height: auto
+                                    img
+                                        width: 100%
+                                        height: auto
+                                        max-width: 600px
+                                #product-card-title
+                                    margin-top: 15px
+                                    p.product-card-title
+                                        font-size: 0.9rem
+                                        font-weight: 400
+                                        letter-spacing: 2px
+                                #product-card-price
+                                    padding: 10px 0 20px 0
+                                    p.product-card-price
+                                        font-size: 1rem
+                                        font-family: Poppins, sans-serif
+                                        font-weight: 700
+                                        color: black
+                                        letter-spacing: 1px
+            #sidebar
+                width: 100%
+                margin: 0 auto
+                padding: 40px 0
+                #product-categories
+                    .title
+                        h3
+                            color: black
+                            padding-bottom: 20px
+                        .title-underline
+                            width: 100%
+                            border-top: 1px solid #eee
+                    ul.category-list
+                        li.product-category
+                            list-style-type: none
+                            padding: 0 0 10px 0
+                            form
+                                button
+                                    font-size: 0.9rem
+                                    background: none
+                                    border: none
+                                    transition: all ease 100ms
+                                    color: lightslategray
+                                    font-weight: 600
+                                    letter-spacing: 3px
+                                    &:hover
+                                        cursor: pointer
+                                        color: $primary
+                                        transition: all ease 100ms
+
+@media all and (min-width: $tabletLarge)
+    section#shop
+        #category-wrapper
+            width: 100%
+            padding: 160px 10% 0 10%
+            display: flex
+            align-items: flex-start
+            justify-content: flex-start
+            flex-direction: row-reverse
+            #product-category
+                margin-bottom: 80px
+                #product-category-grid
+                    #product-category-grid-products
+                        grid-template-columns: 1fr 1fr 1fr
+                        #product-card
+                            a
+                                #product-card-title
+                                    margin-top: 15px
+                                    p.product-card-title
+                                        font-size: 1rem
+
+            #sidebar
+                width: 20%
+                margin: 0 auto
+                padding: 0
+                .title
+                    width: 90%
+                    h3
+                        font-size: 0.9rem
+
+@media all and (min-width: $laptop)
+    section#shop
+        #category-wrapper
+            #product-category
+                width: 80%
+            #sidebar
+                width: 20%
+                margin: 0 auto
+                padding: 0
+                .title
+                    width: 90%
+                    h3
+                        font-size: 1rem
+
+@media all and (min-width: $desktopLarge)
+    section#shop
+        #category-wrapper
+            #product-category
+                #product-category-grid
+                    #product-category-grid-products
+                        grid-template-columns: 1fr 1fr 1fr 1fr
+            #sidebar
+                .title
+                    h3
+                        font-size: 1.2rem
+
+@media all and (min-width: $wide)
+    section#shop
+        #category-wrapper
+            #product-category
+                #product-category-grid
+                    #product-category-grid-products
+                        grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+            #sidebar
+                .title
+                    h3
+                        font-size: 1.4rem

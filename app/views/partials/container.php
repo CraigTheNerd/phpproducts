@@ -1,2 +1,1 @@
-<div class="container">
-<main>
+<main id="page">

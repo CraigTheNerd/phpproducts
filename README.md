@@ -9,14 +9,17 @@ Application Demo - https://phpproducts.dicitil.co.za/
 ##  The PHP Logic
 
 I'm happy with the MVC structure.
-Next I'll implement the products logic.
+Next I'll implement the products logic into the frontend
+
 
 ## The Front End
 
 I first built the PHP logic as what was required for the assessment.
 The code is available here and the output can be viewed on the demo url.
 
-I am currently building the front end and I will push the code and update the demo as the front end is implemented.
+I have built a front end but for starters its static.
+Next I will make it dynamic with the content from the backend
+I will push the code and update the demo as soon as this is implemented.
 
 ##  Application Structure
 
@@ -27,4 +30,4 @@ The structure of the application now follows the MVC design pattern
 Code refactors to look at
 
 - Product Logic
-- Front End
+- Dynamic Front End
