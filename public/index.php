@@ -3,7 +3,7 @@
 declare(strict_types=1);
 error_reporting(E_ALL);
 
-use \Core\Router;
+use core\Router;
 
 define("BASE_PATH", dirname(__DIR__, 1) . '/');
 
@@ -12,7 +12,6 @@ const APP_ROOT = BASE_PATH . 'app';
 require APP_ROOT . '/core/functions.php';
 
 //  Load Config
-
 
 //  Load classes as and when necessary
 spl_autoload_register(function ($class) {
