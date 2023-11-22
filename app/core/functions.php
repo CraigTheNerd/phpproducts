@@ -73,13 +73,14 @@ function views_path(string $path): string
     return app_path('views/' . $path);
 }
 
-/**
- * @param string $view
- * @param array $data
- * @return void
- */
-function view(string $view, array $data = []) : void
+
+function view(string $view, array $data = [])
 {
     extract($data);
     require views_path("{$view}.view.php", $data);
+}
+
+function image_path(string $path) : string
+{
+    return app_path('resources' . $path);
 }

@@ -85,6 +85,10 @@
                     </li>
 
                     <li class="menuLink">
+                        <a class="navLink shopNavItem" href="/products">Products</a>
+                    </li>
+
+                    <li class="menuLink">
                         <a class="navLink aboutNavItem" href="javascript:void()">About</a>
                     </li>
 

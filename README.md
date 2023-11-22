@@ -8,18 +8,23 @@ Application Demo - https://phpproducts.dicitil.co.za/
 
 ##  The PHP Logic
 
-I'm happy with the MVC structure.
-Next I'll implement the products logic into the frontend
+I was asked to implement an interface, which I've now done.
+I added a ProductInterface class which has one(1) method called getProducts()
 
+I then added a ProductIndex class which implements the ProductInterface.
+
+I added a product Model to the codebase.
+In the MVC Design Pattern, the models interact with the database and then hand the data to the controllers.
+
+I've spoofed some database behaviour and handed the data, which right now is just two(2) products, to the product model.
+
+The product controller then hands the data off to the view.
 
 ## The Front End
 
-I first built the PHP logic as what was required for the assessment.
-The code is available here and the output can be viewed on the demo url.
+I've added a new link to a /products page, which shows the raw data
+I will next implement the "dynamic" data from the "database" / model to the frontend via the controller and then to the view.
 
-I have built a front end but for starters its static.
-Next I will make it dynamic with the content from the backend
-I will push the code and update the demo as soon as this is implemented.
 
 ##  Application Structure
 
@@ -29,5 +34,5 @@ The structure of the application now follows the MVC design pattern
 
 Code refactors to look at
 
-- Product Logic
-- Dynamic Front End
+- Dynamic product data to the frontend
+- Write a database class and build a database to handle product data properly 
